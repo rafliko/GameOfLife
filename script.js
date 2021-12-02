@@ -22,8 +22,13 @@ for(i=0;i<cells.length;i++)
     }
 }
 
-setInterval(rules, speed);
-setInterval(draw, speed);
+setInterval(main, speed);
+
+function main()
+{
+	rules();
+	draw();
+}
 
 function rules()
 {
